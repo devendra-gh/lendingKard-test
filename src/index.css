@@ -1,0 +1,192 @@
+@import "_base.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body, #root, .App {
+    height: 100%;
+}
+
+.modal-section {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 550px;
+    height: 405px;
+    box-shadow: 0 0 15px 2px #dddddd;
+    background-color: #f8f8f8;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #bababa;
+    border: none;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 26px;
+    color: #29a1e6;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.form-control {
+    padding: 12px 15px;
+    width: 100%;
+    color: #666666;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    background-color: #dedede;
+}
+.form-control:focus {
+    background-color: #fff;
+    border-color: cornflowerblue;
+}
+.arrow-section .form-control:focus ~ span {
+    background-color: #fff;
+}
+.arrow-section .form-control:focus ~ span:after {
+    border-top-color: #ffffff;
+}
+
+.txt-right {
+    text-align: right;
+}
+.checkbox-section {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.checkbox-section input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 9;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-section span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #29a1e6;
+}
+
+.checkbox-section input:checked ~ span {
+    background-image: url('check.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.checkbox-label {
+    vertical-align: middle;
+    line-height: 20px;
+    padding: 0 0 0 10px;
+    display: inline-block;
+}
+.arrow-section {
+    position: relative;
+}
+.arrow-section span {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    border-radius: 0 4px 4px 0;
+    background-color: #dedede
+}
+
+.arrow-section span:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid #666666;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin: -3px 0 0 -8px;
+}
+
+.arrow-section span:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid #dedede;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin: -6px 0 0 -8px;
+}
+
+.btn {
+    padding: 12px 15px;
+    margin-left: 15px;
+    min-width: 120px;
+    color: #666666;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    background-color: #dedede;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #29a1e6;
+}
+
+datalist > option {
+    padding: 10px;
+}
+
+.error-msg {
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+    color: red;
+}
